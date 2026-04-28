@@ -4,3 +4,9 @@
 *{
   font-family: "Bricolage Grotesque", sans-serif;
 }
+
+@theme{
+    --color-primary:#FFC1FE;
+    --color-secondary:#730000;
+    --color-tertiary:#C3D6FF;
+}
