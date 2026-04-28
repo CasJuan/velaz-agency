@@ -1,6 +1,5 @@
 import { ArrowRight, Brush } from "lucide-react"
 
-
 export const Hero = () => {
   return (
     <main className="w-full min-h-svh flex flex-col items-start justify-center gap-5">

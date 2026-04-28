@@ -7,12 +7,12 @@ export const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-        <nav className="flex flex-row items-center justify-around h-20 w-full border-b-2 fixed z-50">
+        <nav className=" bg-white flex flex-row items-center justify-around h-20 w-full border-b-2 border-tertiary fixed z-50">
             <h1 className="text-2xl text-primary font-bold">Velaz</h1>
             <ul className="hidden md:flex flex-row justify-evenly items-center gap-2">
                 <li className="flex flex-row items-center justify-center gap-5">
                     {navItems.map((item) => (
-                        <a key={item.id} href="">{item.label}</a>
+                        <a key={item.id} href={item.path}>{item.label}</a>
                     ))}
                 </li>
             </ul>
