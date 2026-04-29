@@ -4,32 +4,32 @@ import { motion, AnimatePresence } from "motion/react"
 
 
 export const Preguntas = () => {
-     const faqs = [
-  {
-    question: "¿Puedo contratar solo un servicio o tengo que llevarme el pack?",
-    answer: "Podés contratar el servicio que necesites por separado: solo el sitio web, solo el branding o el pack completo. Te asesoramos para que elijas lo mejor según tu etapa.",
-  },
-  {
-    question: "¿Cuánto tarda un proyecto?",
-    answer: "Un sitio web informativo demora entre 2 y 4 semanas. Una identidad visual entre 2 y 3 semanas. El pack completo se entrega en 4 a 6 semanas según el alcance.",
-  },
-  {
-    question: "¿Cómo es el proceso de pago?",
-    answer: "Trabajamos con un anticipo del 50% para arrancar y el saldo contra entrega. Aceptamos transferencia, MercadoPago y medios internacionales.",
-  },
-  {
-    question: "¿Qué incluye el manual de marca?",
-    answer: "Logo principal y variantes, paleta cromática, sistema tipográfico, usos correctos e incorrectos y aplicaciones básicas, todo en un PDF profesional.",
-  },
-  {
-    question: "¿Hacen mantenimiento del sitio web después?",
-    answer: "Sí, ofrecemos planes de soporte mensual opcional. El pack completo incluye 3 meses de soporte premium sin costo.",
-  },
-  {
-    question: "¿Trabajan con clientes fuera de Argentina?",
-    answer: "Por supuesto. Trabajamos 100% remoto y tenemos clientes en LATAM, Europa y Estados Unidos.",
-  },
-];
+    const faqs = [
+        {
+            question: "¿Puedo contratar solo un servicio o tengo que llevarme el pack?",
+            answer: "Podés contratar el servicio que necesites por separado: solo el sitio web, solo el branding o el pack completo. Te asesoramos para que elijas lo mejor según tu etapa.",
+        },
+        {
+            question: "¿Cuánto tarda un proyecto?",
+            answer: "Un sitio web informativo demora entre 2 y 4 semanas. Una identidad visual entre 2 y 3 semanas. El pack completo se entrega en 4 a 6 semanas según el alcance.",
+        },
+        {
+            question: "¿Cómo es el proceso de pago?",
+            answer: "Trabajamos con un anticipo del 50% para arrancar y el saldo contra entrega. Aceptamos transferencia, MercadoPago y medios internacionales.",
+        },
+        {
+            question: "¿Qué incluye el manual de marca?",
+            answer: "Logo principal y variantes, paleta cromática, sistema tipográfico, usos correctos e incorrectos y aplicaciones básicas, todo en un PDF profesional.",
+        },
+        {
+            question: "¿Hacen mantenimiento del sitio web después?",
+            answer: "Sí, ofrecemos planes de soporte mensual opcional. El pack completo incluye 3 meses de soporte premium sin costo.",
+        },
+        {
+            question: "¿Trabajan con clientes fuera de Argentina?",
+            answer: "Por supuesto. Trabajamos 100% remoto y tenemos clientes en LATAM, Europa y Estados Unidos.",
+        },
+    ];
     const [openIndex, setOpenIndex] = useState(null)
 
     const toggle = (index) => {
@@ -37,16 +37,15 @@ export const Preguntas = () => {
     }
     return (
         <>
-            <section id="preguntas" className="min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16">
+            <section id="preguntas" className=" bg-bgWhite min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16">
                 <div className="flex flex-col items-center justify-center gap-1">
-                    <h2 className="text-4xl font-semibold">Preguntas Frecuentes</h2>
-                    <div className="bg-primary h-1 w-28 rounded-full"></div>
+                    <h2 className="text-5xl font-semibold font-extrabold tracking-tight">Preguntas Frecuentes</h2>
                 </div>
-                <div className="flex flex-col items-center gap-3 w-full ">
+                <div className="flex flex-col items-center gap-3 w-full px-4">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="bg-[#F3F3F3] md:w-2/5 w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer"
+                            className="bg-[#F3F3F3] w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-shadow hover:shadow-md"
                             onClick={() => toggle(index)}
                         >
                             {/* Header / summary */}
