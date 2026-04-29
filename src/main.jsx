@@ -8,6 +8,7 @@ import { Nosotros } from './Nosotros'
 import { Portfolio } from './Portfolio'
 import { Proceso } from './Proceso'
 import {Preguntas} from './Prguntas'
+import { Contacto } from './Contacto'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')).render(
     <Portfolio/>
     <Proceso/>
     <Preguntas/>
+    <Contacto/>
   </StrictMode>,
 )
