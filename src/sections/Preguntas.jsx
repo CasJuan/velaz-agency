@@ -45,16 +45,16 @@ export const Preguntas = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="bg-[#F3F3F3] w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-shadow hover:shadow-md"
+                            className="bg-white w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-shadow hover:shadow-md"
                             onClick={() => toggle(index)}
                         >
                             {/* Header / summary */}
                             <div className="flex items-center justify-between p-4">
-                                <span className="text-lg md:text-2xl text-secondary text-left">{faq.question}</span>
+                                <span className="text-lg  text-black/80 text-left">{faq.question}</span>
                                 <motion.span
                                     animate={{ rotate: openIndex === index ? 180 : 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className="text-secondary text-xl ml-2 shrink-0"
+                                    className="text-black/80 text-xl ml-2 shrink-0"
                                 >
                                     ▼
                                 </motion.span>
@@ -69,7 +69,7 @@ export const Preguntas = () => {
                                         transition={{ duration: 0.35, ease: "easeInOut" }}
                                         style={{ overflow: "hidden" }}
                                     >
-                                        <p className="text-brown text-lg px-4 pb-4">{faq.answer}</p>
+                                        <p className="text-lg px-4 pb-4 text-gray-500">{faq.answer}</p>
                                     </motion.div>
                                 )}
                             </AnimatePresence>

@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 
-*{
-  font-family: "Bricolage Grotesque", sans-serif;
+* {
   scroll-behavior: smooth;
 }
 
-@theme{
-    --color-primary:#FFC1FE;
-    --color-secondary:#730000;
-    --color-tertiary:#C3D6FF;
-    --color-secondaryBlack:#141414;
-    --color-bgWhite:#F0F5FF;
+@theme {
+  --font-sans: "Bricolage Grotesque", sans-serif;
+  --font-display: "Dancing Script", cursive;
+  --color-primary: #FFC1FE;
+  --color-secondary: #730000;
+  --color-tertiary: #C3D6FF;
+  --color-secondaryBlack: #141414;
+  --color-bgWhite: #F0F5FF;
 }
