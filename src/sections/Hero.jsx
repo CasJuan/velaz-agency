@@ -6,22 +6,21 @@ export const Hero = () => {
     <main className="relative w-full min-h-svh flex items-center justify-center overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 max-w-7xl mx-auto px-4 md:px-12 w-full pt-20">
 
-        {/* Lado izquierdo: Textos y botones */}
         <motion.div className="flex flex-col items-center lg:items-start justify-center gap-6 w-full lg:w-1/2" initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
 
-          <motion.span className="bg-primary/20 border border-primary rounded-full px-5 py-2 text-secondary flex flex-row gap-2 justify-center items-center font-medium text-sm" initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
+          <span className="bg-primary/20 border border-primary rounded-full px-5 py-2 text-secondary flex flex-row gap-2 justify-center items-center font-medium text-sm animate-[bounce_4s_ease-in-out_2]" >
             <Brush className="h-4 w-4" /> Agencia digital - Buenos Aires
-          </motion.span>
+          </span>
 
-          <h1 className="text-5xl lg:text-7xl font-extrabold text-secondary text-center lg:text-left leading-tight tracking-tight">
-            Tu marca empieza aquí
+          <h1 className="text-5xl lg:text-7xl font-extrabold text-center lg:text-left leading-tight tracking-tight ">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
+              Tu marca empieza aquí
+            </span>
           </h1>
 
-          <p className="text-xl text-gray-600 text-center lg:text-left max-w-xl">
+          <p className="text-xl text-gray-500 text-center lg:text-left max-w-xl">
             Diseñamos sitios web informativos, identidades visuales y branding completo. Soluciones a medida o paquetes integrales para hacer crecer tu marca con propósito.
           </p>
 

@@ -14,3 +14,39 @@
   --color-secondaryBlack: #141414;
   --color-bgWhite: #F0F5FF;
 }
+
+/* :root {
+--color-pink-50: #FFF0F7;
+--color-pink-100: #FFD6EC;
+--color-pink-200: #FFB3DC;
+--color-pink-400: #FF6EB7;
+--color-pink-600: #E83D96;
+--color-pink-800: #C4267A;
+--color-pink-900: #8F1255;
+
+--color-bordo-50: #F9EAEC;
+--color-bordo-100: #F0C4C9;
+--color-bordo-200: #E09098;
+--color-bordo-400: #C04050;
+--color-bordo-600: #8B1A28;
+--color-bordo-800: #6B0F1C;
+--color-bordo-900: #3D0610;
+
+--color-neutral-50: #FAFAFA;
+--color-neutral-100: #F1EFF8;
+--color-neutral-200: #E4E1F4;
+--color-neutral-400: #C5C0E0;
+--color-neutral-600: #8C86B8;
+--color-neutral-800: #4A456B;
+--color-neutral-900: #1E1B2E;
+
+--color-primary: var(--color-pink-600);
+--color-primary-hover: var(--color-pink-800);
+--color-accent: var(--color-bordo-600);
+--color-accent-hover: var(--color-bordo-800);
+--color-bg-default: var(--color-neutral-50);
+--color-bg-section: var(--color-neutral-100);
+--color-text-main: var(--color-neutral-900);
+--color-text-muted: var(--color-neutral-600);
+--color-border: var(--color-neutral-200);
+}*/

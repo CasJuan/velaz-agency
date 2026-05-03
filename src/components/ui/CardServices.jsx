@@ -11,7 +11,7 @@ export const CardServices = ({ icon, title, desc, items, btn }) => {
     };
 
     return (
-        <div className="flex flex-col items-start justify-center gap-5 h-auto w-80 bg-white rounded-2xl shadow p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/20 group cursor-pointer">
+        <div className="flex flex-col items-start justify-center gap-5 h-auto w-96 bg-white rounded-2xl shadow p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/20 group cursor-pointer">
             <div className="bg-primary h-10 w-10 flex flex-col items-center justify-center rounded-2xl shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-primary/40">
                 {renderIcon()}
             </div>
