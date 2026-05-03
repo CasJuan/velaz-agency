@@ -37,11 +37,21 @@ export const Preguntas = () => {
     }
     return (
         <>
-            <section id="preguntas" className=" bg-bgWhite min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16">
-                <div className="flex flex-col items-center justify-center gap-1">
-                    <h2 className="text-5xl font-semibold font-extrabold tracking-tight">Preguntas Frecuentes</h2>
-                </div>
-                <div className="flex flex-col items-center gap-3 w-full px-4">
+            <section id="preguntas" className=" bg-bgWhite min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16" >
+                <motion.div className="flex flex-col items-center justify-center gap-1" initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
+                    <h2 className="text-5xl font-extrabold tracking-tight">
+                        <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
+                            Preguntas Frecuentes
+                        </span>
+                    </h2>
+                </motion.div>
+                <motion.div className="flex flex-col items-center gap-3 w-full px-4" initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
@@ -75,7 +85,7 @@ export const Preguntas = () => {
                             </AnimatePresence>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </section>
         </>
     )

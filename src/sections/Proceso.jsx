@@ -1,4 +1,5 @@
 import { MessageCircle, FileText, Paintbrush, Rocket } from "lucide-react"
+import { motion } from "framer-motion"
 
 const steps = [
     {
@@ -42,11 +43,16 @@ const steps = [
 export const Proceso = () => {
     return (
         <section id="proceso" className="bg-bgWhite py-24 lg:py-32 w-full flex justify-center">
-            <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8" initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
                 <div className="flex flex-col items-center text-center mb-16">
                     <span className="uppercase text-secondary text-base font-semibold mb-2">Proceso</span>
-                    <h2 className="text-5xl lg:text-5xl font-bold font-extrabold tracking-tight">
-                        Cómo trabajamos
+                    <h2 className="text-5xl lg:text-5xl font-extrabold tracking-tight">
+                        <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
+                            Cómo trabajamos
+                        </span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
                         Un proceso claro y colaborativo de principio a fin
@@ -108,7 +114,7 @@ export const Proceso = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
