@@ -40,10 +40,10 @@ export const Footer = () => {
             Contacto
           </h4>
           <a
-            href="mailto:hola@velaz.studio"
+            href="mailto:jusai.studio@gmail.com"
             className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
           >
-            <Mail className="w-4 h-4" /> hola@velaz.studio
+            <Mail className="w-4 h-4" /> jusai.studio@gmail.com
           </a>
           <p className="mt-2 text-white/70">Buenos Aires, Argentina</p>
         </div>
