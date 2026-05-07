@@ -19,8 +19,8 @@ export const Nosotros = () => {
                     <p className="text-lg text-gray-500">Velaz nació de una idea simple: unir lo que cada uno sabe hacer bien y ponerlo al servicio de quienes quieren crecer. Juan del lado del código, Azul del lado del diseño, y los dos con las mismas ganas de emprender y construir algo propio.</p>
                     <p className="text-lg text-gray-500">No somos una agencia grande ni queremos serlo. Somos un estudio de dos personas que trabaja de cerca con cada cliente, entiende su negocio antes de abrir el editor, y cuida cada detalle como si fuera propio.</p>
                     <ul className="flex flex-col items-start justify-center gap-2">
-                        <li className="text-lg text-gray-500">Juan Castro — Desarrollo web frontend. Construyo sitios rápidos, modernos y responsive con foco en la experiencia del usuario.</li>
-                        <li className="text-lg text-gray-500">Azul López — Diseño gráfico e identidad visual. Creo marcas con personalidad, coherencia y criterio estético en cada pieza.</li>
+                        <li className="text-lg text-gray-500">Juan — Desarrollo web frontend. Construyo sitios rápidos, modernos y responsive con foco en la experiencia del usuario.</li>
+                        <li className="text-lg text-gray-500">Azul — Diseño gráfico e identidad visual. Creo marcas con personalidad, coherencia y criterio estético en cada pieza.</li>
                     </ul>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
