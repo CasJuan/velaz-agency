@@ -5,26 +5,46 @@ const steps = [
     {
         number: "01",
         icon: MessageCircle,
-        title: "Reunión inicial",
-        description: "Entendemos tu negocio, objetivos y público para crear una estrategia a medida.",
+        title: "Descubrimiento",
+        description: "Analizamos tus objetivos, audiencia y mercado para trazar la ruta estratégica más efectiva.",
+        entregables: [
+            "Brief de proyecto",
+            "Audit competitivo",
+            "Roadmap",
+        ],
     },
     {
         number: "02",
         icon: FileText,
-        title: "Propuesta y presupuesto",
-        description: "Presentamos un plan personalizado con tiempos, entregables y costos claros.",
+        title: "Estrategia & Diseño",
+        description: "Creamos conceptos visuales y estructuras funcionales que conectan con tu audiencia.",
+        entregables: [
+            "Wireframes",
+            "Sistema visual",
+            "Prototipos",
+        ],
     },
     {
         number: "03",
         icon: Paintbrush,
-        title: "Aprobacion y seña",
-        description: "Creamos tu marca o sitio web con revisiones incluidas en cada etapa.",
+        title: "Desarrollo",
+        description: "Implementamos soluciones robustas y escalables con los más altos estándares técnicos.",
+        entregables: [
+            "Código limpio",
+            "QA cross-device",
+            "CMS opcional",
+        ],
     },
     {
         number: "04",
         icon: Paintbrush,
-        title: "Diseño y desarrollo",
-        description: "Creamos tu marca o sitio web con revisiones incluidas en cada etapa.",
+        title: "Lanzamiento",
+        description: "Publicamos, medimos y acompañamos los primeros pasos para asegurar el impacto real.",
+        entregables: [
+            "Deploy",
+            "Analytics",
+            "Soporte 30 días",
+        ],
     },
     {
         number: "05",
@@ -48,14 +68,14 @@ export const Proceso = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
                 <div className="flex flex-col items-center text-center mb-16">
-                    <span className="uppercase text-secondary text-base font-semibold mb-2">Proceso</span>
+                    <span className="uppercase text-secondary text-base font-semibold mb-2">Metodologia</span>
                     <h2 className="text-5xl lg:text-5xl font-extrabold tracking-tight">
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-                            Cómo trabajamos
+                            Cuatro fases, cero sorpresas
                         </span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-                        Un proceso claro y colaborativo de principio a fin
+                        Un proceso transparente diseñado para que sepas siempre dónde estamos y qué viene después.
                     </p>
                 </div>
                 <div className="w-full max-w-6xl mx-auto mt-10">

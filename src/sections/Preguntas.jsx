@@ -44,7 +44,7 @@ export const Preguntas = () => {
                     transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
                     <h2 className="text-5xl font-extrabold tracking-tight">
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-                            Preguntas Frecuentes
+                            Todo lo que necesitás saber
                         </span>
                     </h2>
                 </motion.div>

@@ -22,19 +22,18 @@ export const Contacto = () => {
 
           <div className="relative">
             <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
-              ¿Listo para que tu marca
+              ¿Listo para transformar
               <br />
               <span className="text-primary">
-                despegue?
+                tu presencia digital?
               </span>
             </h2>
             <p className="mt-6 text-white/90 text-lg max-w-xl mx-auto">
-              Conversemos sobre tu proyecto. Te respondemos en menos de 24 horas
-              con una propuesta a medida.
+              Conversemos sobre tu próximo gran paso. Respondemos en menos de 24 horas con una propuesta a medida y sin compromiso.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:hola@velaz.studio" className="rounded-full bg-white text-secondary hover:bg-white/90 h-14 px-8 text-base font-semibold flex flex-row items-center justify-center transition-colors shadow-lg">
-                Empezá tu proyecto <ArrowRight className="ml-2 w-4 h-4" />
+               Agendar consultoria <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               <a href="#servicios" className="rounded-full h-14 px-8 text-base border-2 border-white/30 text-white bg-transparent hover:bg-white/10 hover:border-white flex flex-row items-center justify-center transition-all">
                 Ver servicios

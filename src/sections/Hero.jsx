@@ -1,4 +1,4 @@
-import { ArrowRight, Brush } from "lucide-react"
+import { ArrowRight, Brush, Sparkles } from "lucide-react"
 import { motion } from "framer-motion";
 
 export const Hero = () => {
@@ -11,25 +11,25 @@ export const Hero = () => {
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
 
           <span className="bg-primary/20 border border-primary rounded-full px-5 py-2 text-secondary flex flex-row gap-2 justify-center items-center font-medium text-sm animate-[bounce_4s_ease-in-out_2]" >
-            <Brush className="h-4 w-4" /> Agencia digital - Buenos Aires
+            <Sparkles className="h-4 w-4" /> Studio digital - Buenos Aires
           </span>
 
           <h1 className="text-5xl lg:text-7xl font-extrabold text-center lg:text-left leading-tight tracking-tight ">
             <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-              Tu marca empieza aquí
+              Elevamos tu marca al siguiente nivel digital
             </span>
           </h1>
 
           <p className="text-xl text-gray-500 text-center lg:text-left max-w-xl">
-            Diseñamos sitios web informativos, identidades visuales y branding completo. Soluciones a medida o paquetes integrales para hacer crecer tu marca con propósito.
+            Especialistas en desarrollo web informativo, branding visual y diseño gráfico con un enfoque estratégico y resultados medibles.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full mt-4">
             <button className="w-full sm:w-auto px-8 py-4 bg-primary text-secondary rounded-full shadow-lg flex flex-row items-center justify-center gap-2 hover:bg-secondary hover:text-white transition-all duration-300 font-bold">
-              Ver Servicios <ArrowRight className="h-5 w-5" />
+              Ver Proyectos <ArrowRight className="h-5 w-5" />
             </button>
             <button className="w-full sm:w-auto px-8 py-4 border-2 border-secondary text-secondary rounded-full hover:bg-secondary hover:text-white transition-all duration-300 font-bold">
-              Hablar con un asesor
+              Nuestra metdologia
             </button>
           </div>
         </motion.div>

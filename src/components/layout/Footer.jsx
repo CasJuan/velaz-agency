@@ -13,7 +13,7 @@ export const Footer = () => {
             <h1 className="text-2xl text-white font-extrabold tracking-tight">Jusai <span className="text-xl text-white font-display font-bold tracking-tight">studio</span> </h1>
           </div>
           <p className="mt-4 text-white/70 max-w-xs leading-relaxed">
-            Diseño web y branding visual para marcas que quieren crecer con identidad.
+            Studio digital especializado en desarrollo web, diseño gráfico y branding visual para marcas con ambición.
           </p>
         </div>
 
