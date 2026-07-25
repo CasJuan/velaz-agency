@@ -1,34 +1,38 @@
-import { MessageCircle, FileText, Paintbrush, Rocket } from "lucide-react"
+import { MessageCircle, FileText, Paintbrush, Rocket, FileSearchCorner } from "lucide-react"
 import { motion } from "framer-motion"
 
 const steps = [
     {
         number: "01",
         icon: MessageCircle,
-        title: "Reunión inicial",
-        description: "Entendemos tu negocio, objetivos y público para crear una estrategia a medida.",
+        title: "Descubrimiento",
+        description: "Analizamos tus objetivos, audiencia y mercado para trazar la ruta estratégica más efectiva.",
+
     },
     {
         number: "02",
         icon: FileText,
-        title: "Propuesta y presupuesto",
-        description: "Presentamos un plan personalizado con tiempos, entregables y costos claros.",
+        title: "Estrategia & Diseño",
+        description: "Creamos conceptos visuales y estructuras funcionales que conectan con tu audiencia.",
+
     },
     {
         number: "03",
         icon: Paintbrush,
-        title: "Aprobacion y seña",
-        description: "Creamos tu marca o sitio web con revisiones incluidas en cada etapa.",
+        title: "Desarrollo",
+        description: "Implementamos soluciones robustas y escalables con los más altos estándares técnicos.",
+
     },
     {
         number: "04",
         icon: Paintbrush,
-        title: "Diseño y desarrollo",
-        description: "Creamos tu marca o sitio web con revisiones incluidas en cada etapa.",
+        title: "Lanzamiento",
+        description: "Publicamos, medimos y acompañamos los primeros pasos para asegurar el impacto real.",
+
     },
     {
         number: "05",
-        icon: Rocket,
+        icon: FileSearchCorner,
         title: "Revisiones y ajustes",
         description: "Ajustamos detalles según tus comentarios para perfeccionar el resultado final.",
     },
@@ -42,20 +46,20 @@ const steps = [
 
 export const Proceso = () => {
     return (
-        <section id="proceso" className="bg-bgWhite py-24 lg:py-32 w-full flex justify-center">
+        <section id="proceso" className="bg-backgBlack py-24 lg:py-32 w-full flex justify-center">
             <motion.div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8" initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
                 <div className="flex flex-col items-center text-center mb-16">
-                    <span className="uppercase text-secondary text-base font-semibold mb-2">Proceso</span>
+                    <span className="uppercase text-secondary text-base font-semibold mb-2">Metodologia</span>
                     <h2 className="text-5xl lg:text-5xl font-extrabold tracking-tight">
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-                            Cómo trabajamos
+                            Cuatro fases, cero sorpresas
                         </span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-                        Un proceso claro y colaborativo de principio a fin
+                        Un proceso transparente diseñado para que sepas siempre dónde estamos y qué viene después.
                     </p>
                 </div>
                 <div className="w-full max-w-6xl mx-auto mt-10">
@@ -84,15 +88,15 @@ export const Proceso = () => {
                                     <div className="w-20 h-20 rounded-full bg-tertiary flex items-center justify-center shadow-lg">
                                         <step.icon className="w-8 h-8 text-secondary" />
                                     </div>
-                                    <span className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-white border-2 border-tertiary flex items-center justify-center text-xs font-bold text-secondary">
+                                    <span className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-white border-2 border-tertiary flex items-center justify-center text-xs font-bold text-tertiary">
                                         {step.number}
                                     </span>
                                 </div>
                                 <div className="md:text-center flex-1 pt-4 md:pt-0">
-                                    <h3 className="text-xl font-bold mb-2">
+                                    <h3 className="text-xl font-bold mb-2 text-secondary">
                                         {step.title}
                                     </h3>
-                                    <p className="text-base text-gray-500 leading-relaxed">
+                                    <p className="text-base text-secondary leading-relaxed">
                                         {step.description}
                                     </p>
                                 </div>

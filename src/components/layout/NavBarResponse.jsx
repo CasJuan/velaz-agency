@@ -23,7 +23,7 @@ export const NavBarResponse = ({ open, setOpen }) => {
           ))}
         </ul>
         <div className="w-full px-6 mt-4">
-          <button onClick={() => setOpen(false)} className="block w-full py-3 rounded-2xl bg-secondary text-white hover:bg-white hover:text-primary transition-colors duration-200 uppercase text-lg font-medium tracking-wide shadow-lg">
+          <button onClick={() => setOpen(false)} className="block w-full py-3 rounded-2xl bg-tertiary text-white hover:bg-white hover:text-primary transition-colors duration-200 uppercase text-lg font-medium tracking-wide shadow-lg">
             Empezá tu proyecto
           </button>
         </div>

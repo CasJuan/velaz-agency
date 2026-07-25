@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Hero/>
     <Servicios/>
     <Nosotros/>
-    <Portfolio/>
+    {/* <Portfolio/> */}
     <Proceso/>
     <Preguntas/>
     <Contacto/>

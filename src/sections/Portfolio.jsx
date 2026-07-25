@@ -19,7 +19,7 @@ export const Portfolio = () => {
     }
 
     return (
-        <section id="proyectos" className="bg-bgWhite w-full min-h-svh flex flex-col items-center justify-center gap-5 py-20">
+        <section id="proyectos" className="bg-backSecondaryBlack w-full min-h-svh flex flex-col items-center justify-center gap-5 py-20">
             <motion.div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center w-full" initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}

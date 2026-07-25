@@ -37,15 +37,16 @@ export const Preguntas = () => {
     }
     return (
         <>
-            <section id="preguntas" className=" bg-bgWhite min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16" >
+            <section id="preguntas" className=" bg-backgBlack min-h-screen text-center flex flex-col items-center justify-center gap-8 px-4 py-12 md:py-16" >
                 <motion.div className="flex flex-col items-center justify-center gap-1" initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, amount: 0.2 }}
                     transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}>
-                    <h2 className="text-5xl font-extrabold tracking-tight">
-                        <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-                            Preguntas Frecuentes
+                    <h2 className="text-5xl tracking-tight">
+                        <span className="bg-clip-text font-extrabold text-transparent bg-linear-to-r from-secondary to-primary">
+                            Todo lo que necesitás saber
                         </span>
+                        <p className="text-lg text-gray-500 mt-4">¿Te queda alguna duda? Escribinos directo y te respondemos en menos de 24 horas.</p>
                     </h2>
                 </motion.div>
                 <motion.div className="flex flex-col items-center gap-3 w-full px-4" initial={{ opacity: 0, scale: 0.9 }}
@@ -55,16 +56,16 @@ export const Preguntas = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="bg-white w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-shadow hover:shadow-md"
+                            className="bg-[#090E1A] w-full max-w-3xl m-2 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-shadow hover:shadow-md"
                             onClick={() => toggle(index)}
                         >
                             {/* Header / summary */}
                             <div className="flex items-center justify-between p-4">
-                                <span className="text-lg  text-black/80 text-left">{faq.question}</span>
+                                <span className="text-lg  text-secondary text-left">{faq.question}</span>
                                 <motion.span
                                     animate={{ rotate: openIndex === index ? 180 : 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className="text-black/80 text-xl ml-2 shrink-0"
+                                    className="text-secondary text-xl ml-2 shrink-0"
                                 >
                                     ▼
                                 </motion.span>
