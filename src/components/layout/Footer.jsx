@@ -5,7 +5,7 @@ import { navItems } from "../../data/nav";
 export const Footer = () => {
   const navLinks = navItems;
   return (
-    <footer className="bg-[#2a0000] text-white w-full">
+    <footer className="bg-[#05080F] text-white w-full">
       <div className="w-full max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
         <div>
           <div className="flex items-center gap-2">

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export const Nosotros = () => {
     return (
-        <section id="nosotros" className="bg-bgWhite w-full min-h-svh flex items-center">
+        <section id="nosotros" className="bg-backSecondaryBlack w-full min-h-svh flex items-center">
             <motion.div className="flex flex-col md:flex-row items-center justify-center gap-10 p-5 md:p-12 max-w-7xl mx-auto w-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -16,7 +16,7 @@ export const Nosotros = () => {
                             Somos Juan y Azul
                         </span>
                     </h2>
-                    <p className="text-lg text-gray-500">Velaz nació de una idea simple: unir lo que cada uno sabe hacer bien y ponerlo al servicio de quienes quieren crecer. Juan del lado del código, Azul del lado del diseño, y los dos con las mismas ganas de emprender y construir algo propio.</p>
+                    <p className="text-lg text-gray-500">Jusai nació de una idea simple: unir lo que cada uno sabe hacer bien y ponerlo al servicio de quienes quieren crecer. Juan del lado del código, Azul del lado del diseño, y los dos con las mismas ganas de emprender y construir algo propio.</p>
                     <p className="text-lg text-gray-500">No somos una agencia grande ni queremos serlo. Somos un estudio de dos personas que trabaja de cerca con cada cliente, entiende su negocio antes de abrir el editor, y cuida cada detalle como si fuera propio.</p>
                     <ul className="flex flex-col items-start justify-center gap-2">
                         <li className="text-lg text-gray-500">Juan — Desarrollo web frontend. Construyo sitios rápidos, modernos y responsive con foco en la experiencia del usuario.</li>
