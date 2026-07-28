@@ -55,7 +55,7 @@ export const Proceso = () => {
                     <span className="uppercase text-secondary text-base font-semibold mb-2">Metodologia</span>
                     <h2 className="text-5xl lg:text-5xl font-extrabold tracking-tight">
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary">
-                            Cuatro fases, cero sorpresas
+                            Seis fases, cero sorpresas
                         </span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
