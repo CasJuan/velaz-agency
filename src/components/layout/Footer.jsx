@@ -51,7 +51,7 @@ export const Footer = () => {
 
       <div className="border-t border-white/10 w-full">
         <div className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-white/50">
-          <p>© {new Date().getFullYear()} Velaz Studio. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Jusai Studio. Todos los derechos reservados.</p>
           <p>Diseñado y desarrollado con ❤️ en Buenos Aires.</p>
         </div>
       </div>
